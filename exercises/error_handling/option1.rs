@@ -7,14 +7,13 @@
 fn main() {
     let mut list = vec![3];
 
-    let last = list.pop().unwrap();
-    println!("The last item in the list is {:?}", last);
+    if let Some(last) = list.pop() {
+        println!("The last item in the list is {:?}", last);
+    }
 
-    let second_to_last = list.pop().unwrap();
-    println!(
-        "The second-to-last item in the list is {:?}",
-        second_to_last
-    );
+    if let Some(second_to_last) = list.pop() {
+        println!("The second-to-last item in the list is {:?}", second_to_last);
+    }
 }
 
 

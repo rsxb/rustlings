@@ -7,8 +7,16 @@
 // more than 40 at once, each apple only costs 1! Write a function that calculates
 // the price of an order of apples given the order amount. No hints this time!
 
+const max: i32 = 40;
+
 // Put your function here!
-// fn ..... {
+fn calculate_price(num: i32) -> i32 {
+    if num > max {
+        num * 2
+    } else {
+        num
+    }
+}
 
 // Don't modify this function!
 #[test]

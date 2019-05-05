@@ -5,9 +5,10 @@ authors = ["Marisa <marisa@mokou.zone>", "Carol (Nichols || Goulding) <carol.nic
 edition = "2018"
 
 [dependencies]
-clap = "2.32.0"
+clap = "2.33.0"
 indicatif = "0.9.0"
 console = "0.6.2"
+syntect = "3.2"
 notify = "4.0.0"
 toml = "0.4.10"
 serde = {version = "1.0.10", features = ["derive"]}
